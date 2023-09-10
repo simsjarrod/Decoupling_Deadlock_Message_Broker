@@ -100,7 +100,7 @@ We can execute additional commands in the terminal as soon as it finishes.
 1. Read v1_listen_for_messages.py (and the tutorial)
 1. Run the file.
 
-You'll need to fix an error in the program to get it to run.
+You'll need to fix an error in the program to get it to run. 
 Once it runs successfully, will it terminate on its own? How do you know? 
 As long as the process is running, we cannot use this terminal for other commands. 
 
@@ -119,6 +119,7 @@ Sending the same message each time is kind of boring. This time:
 
 Repeat this process several times - emit at least 4 different messages.
 Don't worry - it's just code. We can always revert back (try the 'undo' command in VS Code) to a version that works. You can't hurt anything.
+![send and receive messages](dual_terminal_screenshot.png "dual terminal")
 
 ## Task 9. Save Time & Effort: Don't Repeat Yourself
 
