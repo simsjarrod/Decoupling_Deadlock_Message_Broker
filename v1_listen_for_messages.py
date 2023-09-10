@@ -1,4 +1,6 @@
 """
+JARROD SIMS
+9/10/23
 
 Listens for messages on the queue.
 This process runs continuously. 
@@ -22,9 +24,10 @@ Terminal Reminders
 
 """
 
-# you can add multiple imports on one line
-# but we don't recommend it for readability
-import pika, sys, os
+# Import necessary modules from the Python Standard Library
+import pika
+import sys
+import os
 
 
 # define a main function to run the program

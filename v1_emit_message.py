@@ -1,4 +1,7 @@
 """
+JARROD SIMS
+9/10/23
+
     This program sends a message to a queue on the RabbitMQ server.
 
 """
