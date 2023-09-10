@@ -1,4 +1,5 @@
-# streaming-03-rabbitmq
+# Project Title: Decoupling with a Message Broker
+## Jarrod Sims
 
 > Get started with RabbitMQ, a message broker, that enables multiple processes to communicate reliably through an intermediary.
 
@@ -104,15 +105,17 @@ You'll need to fix an error in the program to get it to run.
 Once it runs successfully, will it terminate on its own? How do you know? 
 As long as the process is running, we cannot use this terminal for other commands. 
 
+**Typo in host name has been fixed**
+
 ## Task 8. Open a New Terminal / Emit More Messages
 
 1. Open a new terminal window.
 1. Use this new window to run emit_message.py again.
-1. Watch the listing terminal - what do you see?  A second message?
+1. Watch the listing terminal - what do you see?  A second message? **INFO Received: Hello World!**
 
 Sending the same message each time is kind of boring. This time:
 
-1. Where is the message defined? How can you change it?
+1. Where is the message defined? How can you change it? **The message is defined in the *body* parameter**
 1. Modify emit_message.py to emit a different message. 
 1. Execute the updated emit_message.py. 
 1. Watch what happens in the listening terminal.
@@ -131,6 +134,8 @@ Did you notice you had to change the message in TWO places?
 1. Use your variable when sending. 
 1. Use the variable again when displaying to the user. 
 
+**NEW VARIABLE = "message"**
+
 Now, to send a new message, you'll only make ONE change.
 Updating and improving code is called 'refactoring'. 
 Use your skills to keep coding enjoyable. 
@@ -143,8 +148,8 @@ and a consistent, reusable approach to building code.
 
 Each of the version 2 programs include an error as well. 
 
-1. Find the error and fix it. 
-1. Compare the structure of the version 2 files. 
+1. Find the error and fix it. **typo in queue name**
+1. Compare the structure of the version 2 files. **The V2 emit program utilizes try, except, finally structure and the if __name__ == "__main__": construct. The V2 listening program utilizes logger to print error messages and moves the try, except, finally structure inside the main function.**
 1. Modify the docstrings on all your files.
 1. Include your name and the date.
 1. Imports always go at the top, just after the file docstring.
@@ -154,9 +159,9 @@ Each of the version 2 programs include an error as well.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
-1. Which of the 4 files will always close() the connection?
+1. Which of the 4 files will always close() the connection? **V1_emit_messages.py will allways close the connection**
 1. Search GitHub for if __name__ == "__main__":
-1. How many hits did you get? 
+1. How many hits did you get? **4.3 million**
 1. Learn and understand this common Python idiom.
 
 ## Reference
@@ -165,4 +170,4 @@ Each of the version 2 programs include an error as well.
 - [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 - [RabbitMQ Get Started](https://www.rabbitmq.com/#getstarted)
 
-![Exploring the local virtual environment folder](./images/exploring_dot_venv.PNG)
+![Exploring the local virtual environment folder](./images/exploring_dot_venv.PNG) 
